@@ -2,20 +2,21 @@
 <html>
 <head>
     <title>Dynamic Screen size content</title>
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
     <style>
         @media (min-width: 500px){
-            body{
-                background-color: red;
+            h1::before{
+                content: "Welcome to My web page in screen size more than 500 pixels!"
             }
         }
         @media (max-width: 499px){
-            body{
-                background-color: blue;
+            h1::before{
+                content: "Welcome to my web page in screen size less than 499 pixels!"
             }
         }
     </style>
     </head>
     <body>
-    Welcome to my web page demos based on the screen width (pixels count) background color will change
+        <h1></h1>
     </body>
 </html>
