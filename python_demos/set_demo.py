@@ -6,3 +6,4 @@ s.add(3)
 s.add(4)
 s.add(7)
 s.add(7) # set will not add the duplicate item
+print(s)
