@@ -13,6 +13,6 @@ app = Flask(__name__) #new flask web application __name__ "this file name"
 def index():
     return "Hello, World from Flask!!!"
 
-@app.route("/<string:name>")
+@app.route("/<string:name>") # takes any route string you type in
 def hello(name):
     return f"Hello, {name}!"
