@@ -1,6 +1,6 @@
 #Flask app
 #Run this scrip from the this file working directory
-#set env variable FLASK_APP=flask_app.route0.py
+#set env variable FLASK_APP=flask_app_route0.py
 #set env varibale FLASK_DEBUG=1 
 #flask run
 #go to the given ip address to see webApp
@@ -15,4 +15,5 @@ def index():
 
 @app.route("/<string:name>") # takes any route string you type in
 def hello(name):
+    name = name.capitalize()
     return f"Hello, {name}!"
