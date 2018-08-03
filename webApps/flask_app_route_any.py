@@ -15,5 +15,5 @@ def index():
 
 @app.route("/<string:name>") # takes any route string you type in
 def hello(name):
-    name = name.capitalize()
+    name = name.capitalize() # cap the name
     return f"Hello, {name}!"
